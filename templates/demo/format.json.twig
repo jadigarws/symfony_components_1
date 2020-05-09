@@ -1,0 +1,4 @@
+{ {% for key, value in result %}
+"{{value}}"{% if key < result|length - 1 %},{% endif %}
+    {% endfor %}
+}
